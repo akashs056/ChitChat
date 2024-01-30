@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/mesaage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:background="@drawable/sent_drawable"
+        android:textColor="@color/black"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/feeling"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mesaage"
+        app:layout_constraintEnd_toStartOf="@+id/mesaage"
+        app:layout_constraintStart_toStartOf="@+id/mesaage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fb_love" />
+</androidx.constraintlayout.widget.ConstraintLayout>
